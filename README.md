@@ -13,3 +13,4 @@ Clone the repository:
 ```bash
 git clone https://github.com/WoutSin/philai-2027.git
 cd philai-2027
+python3 -m http.server 8000
