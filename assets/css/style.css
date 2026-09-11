@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    line-height: 1.7;
+    color: #222;
+    background: #ffffff;
+}
+
+
+/* ---------------------------------
+   Header
+---------------------------------- */
+
+.site-header {
+    background: #17263c;
+    color: white;
+    padding: 30px 20px 20px;
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.site-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.tagline {
+    margin-top: 4px;
+    color: #d8e1eb;
+    font-size: 1.1rem;
+}
+
+
+/* ---------------------------------
+   Navigation
+---------------------------------- */
+
+nav {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------
+   Main content
+---------------------------------- */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 22px 70px;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+h2 {
+    color: #17263c;
+    margin-top: 0;
+}
+
+h3 {
+    color: #374c66;
+}
+
+
+/* ---------------------------------
+   Hero
+---------------------------------- */
+
+.hero {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0 55px;
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.event-details {
+    font-size: 1.15rem;
+}
+
+
+/* ---------------------------------
+   Buttons
+---------------------------------- */
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background: #17263c;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #314866;
+}
+
+
+/* ---------------------------------
+   Tables
+---------------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+th {
+    color: #17263c;
+}
+
+
+/* ---------------------------------
+   Lists
+---------------------------------- */
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ---------------------------------
+   Special blocks
+---------------------------------- */
+
+.notice {
+    padding: 18px 22px;
+    border-left: 4px solid #17263c;
+    background: #f3f5f8;
+}
+
+.sister-event {
+    background: #f3f5f8;
+    padding: 25px;
+}
+
+
+/* ---------------------------------
+   Footer
+---------------------------------- */
+
+footer {
+    background: #17263c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ---------------------------------
+   Mobile
+---------------------------------- */
+
+@media (max-width: 650px) {
+
+    .site-title {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
