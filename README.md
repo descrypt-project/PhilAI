@@ -8,8 +8,6 @@ The website contains information about the workshop programme, important dates, 
 
 The website consists of static HTML and CSS files and can be previewed locally without any additional dependencies beyond Python.
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/WoutSin/philai-2027.git
 cd philai-2027
