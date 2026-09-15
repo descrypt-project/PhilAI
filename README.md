@@ -10,6 +10,7 @@ The website consists of static HTML and CSS files and can be previewed locally w
 git clone https://github.com/descrypt-project/PhilAI.git
 cd philai-2027
 python3 -m http.server 8000
+```
 
 ## Image Credits
 
