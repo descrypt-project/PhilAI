@@ -40,12 +40,12 @@ body {
         url("../images/banner.png");
 
     background-size: cover;
-    background-position: center 57%;
+    background-position: center 35%;
     background-repeat: no-repeat;
 
     color: white;
     padding: 40px 20px 30px;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .header-inner {
@@ -260,31 +260,6 @@ li {
 }
 
 
-/* Image credits */
-
-.image-credits {
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.image-credits h2 {
-    font-size: 1.25rem;
-}
-
-.image-credits ul {
-    padding-left: 20px;
-}
-
-.image-credits li {
-    margin-bottom: 6px;
-}
-
-.image-credits a {
-    color: #374c66;
-}
-
-
 /* Footer */
 
 footer {
@@ -293,6 +268,21 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
 
 
