@@ -18,29 +18,49 @@
 
 <header class="site-header">
 
-<div class="header-inner">
+    <div class="header-inner">
 
-<h1 class="site-title">
-<a href="index.html">PhilAI 2027</a>
-</h1>
+        <div class="header-top">
 
-<p class="tagline">
-Philology ∘ Artificial Intelligence ∘ Rare Scripts
-</p>
+            <div class="header-brand">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="programme.html">Programme</a>
-<a href="dates.html">Important dates</a>
-<a href="submissions.html">Submission details</a>
-<a href="instructions.html">Instructions</a>
-<a href="organisation.html">Organisation</a>
-<a href="venue.html">Venue</a>
-<a href="accommodation.html">Accommodation</a>
-<a href="sponsors.html">Sponsors</a>
-</nav>
+                <h1 class="site-title">
+                    <a href="index.html">PhilAI 2027</a>
+                </h1>
 
-</div>
+                <p class="tagline">
+                    Philology ∘ Artificial Intelligence ∘ Rare Scripts
+                </p>
+
+            </div>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+                aria-label="Open navigation menu"
+            >
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+
+        </div>
+
+        <nav id="site-navigation" class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="programme.html">Programme</a>
+            <a href="dates.html">Important dates</a>
+            <a href="submissions.html">Submission details</a>
+            <a href="instructions.html">Instructions</a>
+            <a href="organisation.html">Organisation</a>
+            <a href="venue.html">Venue</a>
+            <a href="accommodation.html">Accommodation</a>
+            <a href="sponsors.html">Sponsors</a>
+        </nav>
+
+    </div>
 
 </header>
 
@@ -141,6 +161,34 @@ please contact
         Modified using AI-assisted image-editing tools.
     </p>
 </footer>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteNavigation = document.querySelector(".site-nav");
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = siteNavigation.classList.toggle("is-open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen.toString());
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+    });
+
+    siteNavigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            siteNavigation.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+        });
+    });
+</script>
 
 </body>
 </html>
