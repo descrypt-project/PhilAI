@@ -30,7 +30,6 @@ body {
 
 
 /* Header */
-
 .site-header {
     background:
         linear-gradient(
@@ -326,8 +325,8 @@ footer a:hover {
 @media (max-width: 650px) {
 
     .site-header {
-        min-height: auto;
-        padding: 14px 18px;
+        min-height: 120px;
+        padding: 18px;
 
         background-position: center center;
     }
@@ -335,12 +334,21 @@ footer a:hover {
     .header-top {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         min-height: 46px;
-        gap: 0;
+        gap: 16px;
     }
 
     .header-brand {
+        display: block;
+        flex: 1;
+    }
+
+    .site-title {
+        font-size: 2rem;
+    }
+
+    .tagline {
         display: none;
     }
 
@@ -414,7 +422,6 @@ footer a:hover {
 
         flex-direction: column;
         gap: 0;
-
         border: 1px solid rgba(255, 255, 255, 0.22);
         border-radius: 10px;
 
