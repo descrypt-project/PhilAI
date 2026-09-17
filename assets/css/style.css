@@ -328,18 +328,26 @@ footer a:hover {
     .site-header {
         min-height: auto;
         padding: 14px 18px;
-
         background-position: center center;
     }
 
     .header-top {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        gap: 0;
+        justify-content: space-between;
+        gap: 16px;
     }
 
     .header-brand {
+        display: block;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .tagline {
         display: none;
     }
 
